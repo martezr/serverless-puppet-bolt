@@ -14,7 +14,7 @@ provider:
     S3_DATA_BUCKET: ${opt:s3_data_bucket}
 
 functions:
-  inspec_scan:
+  run_bolt:
     handler: handler.run_bolt
     layers:
       - {Ref: BoltLambdaLayer }
